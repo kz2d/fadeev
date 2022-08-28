@@ -93,4 +93,4 @@ function makeMenu(node) {
 }
 
 document.querySelectorAll('.main__devices').forEach(node => makeTabs(node));
-document.querySelector('.header__menu').forEach(node => makeMenu(node));
+document.querySelectorAll('.header__menu').forEach(node => makeMenu(node));
