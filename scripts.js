@@ -1,6 +1,6 @@
 (() => {
     function bind(nodes, event, handler) {
-        Array.from(nodes).forEach(node => {
+        nodes.forEach(node => {
             node.addEventListener(event, handler);
         });
     }
@@ -93,7 +93,7 @@
     }
 
     document.addEventListener('DOMContentLoaded', () => {
-        Array.from(document.querySelectorAll('.main__devices')).forEach(makeTabs);
-        Array.from(document.querySelectorAll('.header__menu')).forEach(makeMenu);
+        document.querySelectorAll('.main__devices').forEach(makeTabs);
+        document.querySelectorAll('.header__menu').forEach(makeMenu);
     });
 })();
