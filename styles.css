@@ -280,10 +280,16 @@ svg {
     display: flex;
     gap: 0.9375rem;
     height: 20.6875rem;
-    background: no-repeat 50% 50% url(assets/bg_2x.avif);
+    background: no-repeat 50% 50% url(assets/bg.avif);
     /*background-size: cover;*/
     background-size: 1260px;
     border-radius: 1.25rem;
+}
+
+@media screen and (min-resolution: 2dppx) {
+    .hero-dashboard {
+        background: no-repeat 50% 50% url(assets/bg@2x.avif);
+    }
 }
 
 @media (max-width: 768px) {
