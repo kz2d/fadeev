@@ -364,6 +364,7 @@ svg {
 
 .hero-dashboard__item-details {
     display: flex;
+    align-items: center;
     margin-top: .25rem;
     font-size: 2.25rem;
     font-weight: bold;
@@ -383,6 +384,10 @@ svg {
     margin-left: 0.3125rem;
     background: 50% 50% no-repeat;
     background-size: contain;
+}
+
+.hero-dashboard__icon_rain {
+    background-image: url(assets/cloud-drizzle.svg);
 }
 
 @media (max-width: 768px) {
