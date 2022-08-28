@@ -16,6 +16,13 @@ html, body {
     height: 100%;
 }
 
+
+svg {
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+}
+
 .a11y-hidden {
     position: absolute;
     left: auto;
@@ -273,7 +280,7 @@ html, body {
     display: flex;
     gap: 0.9375rem;
     height: 20.6875rem;
-    background: no-repeat 50% 50% url(assets/bg@2x.png);
+    background: no-repeat 50% 50% url(assets/bg_2x.avif);
     /*background-size: cover;*/
     background-size: 1260px;
     border-radius: 1.25rem;
@@ -386,10 +393,6 @@ html, body {
     }
 }
 
-.hero-dashboard__icon_rain {
-    background-image: url(assets/cloud-drizzle.svg);
-}
-
 .hero-dashboard__schedule {
     display: flex;
     flex: 0 0 auto;
@@ -451,26 +454,6 @@ html, body {
     height: 1.5rem;
     background: no-repeat 50% 50%;
     background-size: contain;
-}
-
-.event__icon_temp {
-    background-image: url(assets/icon_temperature.svg);
-}
-
-.event__icon_temp2 {
-    background-image: url(assets/icon_temperature_2.svg);
-}
-
-.event__icon_light {
-    background-image: url(assets/icon_sun.svg);
-}
-
-.event__icon_light2 {
-    background-image: url(assets/icon_sun_2.svg);
-}
-
-.event__icon_schedule {
-    background-image: url(assets/icon_scheduled.svg);
 }
 
 .event__title {
