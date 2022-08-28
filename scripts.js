@@ -1,14 +1,9 @@
-function bind(nodes, event, handler) {
-    nodes.forEach(node => {
-        node.addEventListener(event, handler);
-    });
-}
-
 function makeTabs(node) {
     let selected = node.querySelector('.section__tab_active').dataset.id;
     const tabs = node.querySelectorAll('.section__tab');
     const list = Array.from(tabs).map(node => node.dataset.id);
     const select = node.querySelector('.section__select');
+    const tabsContainer = node.querySelector('.section__tabs');
 
     function selectTab(newId) {
         const newTab = node.querySelector(`.section__tab[data-id=${newId}]`);
@@ -40,42 +35,48 @@ function makeTabs(node) {
         selectTab(select.value);
     });
 
-    bind(tabs, 'click', event => {
-        const newId = event.target.dataset.id;
-        selectTab(newId);
-    });
-
-    bind(tabs, 'keydown', event => {
-        if (event.ctrlKey || event.metaKey || event.shiftKey || event.altKey) {
-            return;
+    tabsContainer.addEventListener('click', (event) => {
+        if (event.target.classList.contains('section__tab')) {
+            const newId = event.target.dataset.id;
+            selectTab(newId);
         }
+    })
 
-        let index = list.indexOf(selected);
-        if (event.which === 37) {
-            // left
-            --index;
-        } else if (event.which === 39) {
-            // right
-            ++index;
-        } else if (event.which === 36) {
-            // home
-            index = 0;
-        } else if (event.which === 35) {
-            // end
-            index = list.length - 1;
-        } else {
-            return;
-        }
+     tabsContainer.addEventListener('keydown', (event) => {
+         if (!event.target.classList.contains('section__tab')) {
+             return;
+         }
 
-        if (index >= list.length) {
-            index = 0;
-        } else if (index < 0) {
-            index = list.length - 1;
-        }
+         if (event.ctrlKey || event.metaKey || event.shiftKey || event.altKey) {
+             return;
+         }
 
-        selectTab(list[index]);
-        event.preventDefault();
-    });
+         let index = list.indexOf(selected);
+         if (event.which === 37) {
+             // left
+             --index;
+         } else if (event.which === 39) {
+             // right
+             ++index;
+         } else if (event.which === 36) {
+             // home
+             index = 0;
+         } else if (event.which === 35) {
+             // end
+             index = list.length - 1;
+         } else {
+             return;
+         }
+
+         if (index >= list.length) {
+             index = 0;
+         } else if (index < 0) {
+             index = list.length - 1;
+         }
+
+         selectTab(list[index]);
+         event.preventDefault();
+     })
 }
 
 function makeMenu(node) {
