@@ -62,7 +62,7 @@ html, body {
     height: 100%;
     margin: 0 0 0 auto;
     padding: 0;
-    background: 50% 50% no-repeat transparent url(assets/icon_list_m.svg);
+    background-color: transparent;
     border: none;
     border-radius: 0;
     appearance: none;
@@ -71,7 +71,9 @@ html, body {
 
 @media (max-width: 768px) {
     .header__menu {
-        display: block;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }
 
