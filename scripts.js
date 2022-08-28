@@ -92,5 +92,7 @@ function makeMenu(node) {
     });
 }
 
-document.querySelectorAll('.main__devices').forEach(makeTabs);
-document.querySelectorAll('.header__menu').forEach(makeMenu);
+const mainDevicesNode = document.querySelector('.main__devices');
+makeTabs(mainDevicesNode);
+const menuNode = document.querySelector('.header__menu');
+makeMenu(menuNode);
