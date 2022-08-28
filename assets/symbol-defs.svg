@@ -13,7 +13,7 @@
         </g>
         <g id="img-icon-scheduled">
             <g xmlns="http://www.w3.org/2000/svg" fill="none" fill-rule="evenodd">
-                <path fill="#F8F8F8" d="M0 0H1366V768H0z" transform="translate(-925 -250)"/>
+                <path fill="transparent" d="M0 0H1366V768H0z" transform="translate(-925 -250)"/>
                 <path d="M0 0H24V24H0z"/>
                 <g stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                    transform="translate(2 2)">
@@ -25,7 +25,7 @@
         <g id="img-icon-sun-2">
             <g xmlns="http://www.w3.org/2000/svg" fill="none"
                fill-rule="evenodd">
-                <path fill="#F8F8F8" d="M0 0H1366V768H0z" transform="translate(-1140 -250)"/>
+                <path fill="transparent" d="M0 0H1366V768H0z" transform="translate(-1140 -250)"/>
                 <path d="M0 0H24V24H0z"/>
                 <g stroke-linecap="round" stroke-linejoin="round" stroke-width="2" transform="translate(1 1)">
                     <circle cx="11" cy="11" r="5" stroke="#F5A623"/>
@@ -42,7 +42,7 @@
         </g>
         <g id="img-icon-sun">
             <g xmlns="http://www.w3.org/2000/svg" fill="none" fill-rule="evenodd">
-                <path fill="#F8F8F8" d="M0 0H1366V768H0z" transform="translate(-464 -404)"/>
+                <path fill="transparent" d="M0 0H1366V768H0z" transform="translate(-464 -404)"/>
                 <path d="M0 0H24V24H0z"/>
                 <g stroke="#333333" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                    transform="translate(1 1)">
@@ -60,7 +60,7 @@
         </g>
         <g id="img-icon-temperature-2">
             <g xmlns="http://www.w3.org/2000/svg" fill="none" fill-rule="evenodd">
-                <path fill="#F8F8F8" d="M0 0H1366V768H0z" transform="translate(-925 -365)"/>
+                <path fill="transparent" d="M0 0H1366V768H0z" transform="translate(-925 -365)"/>
                 <path d="M0 0H24V24H0z"/>
                 <g transform="translate(7 1)">
                     <path stroke="#F5A623" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -71,7 +71,7 @@
         </g>
         <g id="img-icon-temperature">
             <g xmlns="http://www.w3.org/2000/svg" fill="none" fill-rule="evenodd">
-                <path fill="#F8F8F8" d="M0 0H1366V768H0z" transform="translate(-464 -269)"/>
+                <path fill="transparent" d="M0 0H1366V768H0z" transform="translate(-464 -269)"/>
                 <path d="M0 0H24V24H0z"/>
                 <path stroke="#333333" stroke-linecap="round" stroke-linejoin="round" stroke-opacity=".4"
                       stroke-width="2"

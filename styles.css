@@ -364,7 +364,6 @@ svg {
 
 .hero-dashboard__item-details {
     display: flex;
-    align-items: center;
     margin-top: .25rem;
     font-size: 2.25rem;
     font-weight: bold;
