@@ -7,6 +7,7 @@
     <title>Яндекс.Дом</title>
     <link rel="stylesheet" type="text/css" href="reset.css">
     <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="out/css/sprite.css">
     <script src="script.min.js" defer></script>
 </head>
 <body>
@@ -51,7 +52,7 @@
                             <span class="a11y-hidden">°</span>
 
                             <div
-                                class="hero-dashboard__icon hero-dashboard__icon_rain"
+                                class="hero-dashboard__icon svg-cloud-drizzle"
                                 role="img"
                                 aria-label="Дождь"
                             >
@@ -63,10 +64,7 @@
             <ul class="hero-dashboard__schedule">
                 <li class="event">
                     <button class="event__button">
-                        <span class="event__icon" role="img" aria-label="Температура">
-                            <svg>
-                                <use xlink:href="./assets/symbol-defs.svg#img-icon-temperature"></use>
-                            </svg>
+                        <span class="event__icon svg-icon_temperature svg-icon_temperature-dims" role="img" aria-label="Температура">
                         </span>
                         <h4 class="event__title">Philips Cooler</h4>
                         <span class="event__subtitle">Начнет охлаждать в 16:30</span>
@@ -74,10 +72,7 @@
                 </li>
                 <li class="event">
                     <button class="event__button">
-                        <span class="event__icon" role="img" aria-label="Освещение">
-                            <svg>
-                                <use xlink:href="./assets/symbol-defs.svg#img-icon-sun"></use>
-                            </svg>
+                        <span class="event__icon svg-icon_sun svg-icon_sun-dims" role="img" aria-label="Освещение">
                         </span>
                         <h4 class="event__title">Xiaomi Yeelight LED Smart Bulb</h4>
                         <span class="event__subtitle">Включится в 17:00</span>
@@ -85,10 +80,7 @@
                 </li>
                 <li class="event">
                     <button class="event__button">
-                        <span class="event__icon" role="img" aria-label="Освещение">
-                            <svg>
-                                <use xlink:href="./assets/symbol-defs.svg#img-icon-sun"></use>
-                            </svg>
+                        <span class="event__icon svg-icon_sun svg-icon_sun-dims" role="img" aria-label="Освещение">
                         </span>
                         <h4 class="event__title">Xiaomi Yeelight LED Smart Bulb</h4>
                         <span class="event__subtitle">Включится в 17:00</span>
@@ -104,40 +96,28 @@
         <ul class="event-grid">
             <li class="event event_slim">
                 <button class="event__button">
-                    <span class="event__icon" role="img" aria-label="Освещение">
-                        <svg>
-                            <use xlink:href="./assets/symbol-defs.svg#img-icon-sun-2"></use>
-                        </svg>
+                    <span class="event__icon svg-icon_sun_2 svg-icon_sun_2-dims" role="img" aria-label="Освещение">
                     </span>
                     <h4 class="event__title">Выключить весь свет в доме и во дворе</h4>
                 </button>
             </li>
             <li class="event event_slim">
                 <button class="event__button">
-                    <span class="event__icon" role="img" aria-label="Расписание">
-                        <svg>
-                            <use xlink:href="./assets/symbol-defs.svg#img-icon-scheduled"></use>
-                        </svg>
+                    <span class="event__icon svg-icon_scheduled svg-icon_scheduled-dims" role="img" aria-label="Расписание">
                     </span>
                     <h4 class="event__title">Я ухожу</h4>
                 </button>
             </li>
             <li class="event event_slim">
                 <button class="event__button">
-                    <span class="event__icon" role="img" aria-label="Освещение">
-                        <svg>
-                            <use xlink:href="./assets/symbol-defs.svg#img-icon-sun-2"></use>
-                        </svg>
+                    <span class="event__icon svg-icon_sun_2 svg-icon_sun_2-dims" role="img" aria-label="Освещение">
                     </span>
                     <h4 class="event__title">Включить свет в коридоре</h4>
                 </button>
             </li>
             <li class="event event_slim">
                 <button class="event__button">
-                    <span class="event__icon" role="img" aria-label="Температура">
-                        <svg>
-                            <use xlink:href="./assets/symbol-defs.svg#img-icon-temperature-2"></use>
-                        </svg>
+                    <span class="event__icon svg-icon_temperature_2 svg-icon_temperature_2-dims" role="img" aria-label="Температура">
                     </span>
                     <h4 class="event__title">Набрать горячую ванну</h4>
                     <span class="event__subtitle">Начнётся в 18:00</span>
@@ -145,10 +125,7 @@
             </li>
             <li class="event event_slim">
                 <button class="event__button">
-                    <span class="event__icon" role="img" aria-label="Температура">
-                        <svg>
-                            <use xlink:href="./assets/symbol-defs.svg#img-icon-temperature-2"></use>
-                        </svg>
+                    <span class="event__icon svg-icon_temperature_2 svg-icon_temperature_2-dims" role="img" aria-label="Температура">
                     </span>
                     <h4 class="event__title">Сделать пол тёплым во всей квартире</h4>
                 </button>
@@ -183,10 +160,7 @@
             <ul class="section__panel-list">
                 <li class="event">
                     <button class="event__button">
-                        <span class="event__icon" role="img" aria-label="Освещение">
-                            <svg>
-                                <use xlink:href="./assets/symbol-defs.svg#img-icon-sun-2"></use>
-                            </svg>
+                        <span class="event__icon svg-icon_sun_2 svg-icon_sun_2-dims" role="img" aria-label="Освещение">
                         </span>
                         <h4 class="event__title">Xiaomi Yeelight LED Smart Bulb</h4>
                         <span class="event__subtitle">Включено</span>
@@ -194,10 +168,7 @@
                 </li>
                 <li class="event">
                     <button class="event__button">
-                        <span class="event__icon" role="img" aria-label="Освещение">
-                            <svg>
-                                <use xlink:href="./assets/symbol-defs.svg#img-icon-sun"></use>
-                            </svg>
+                        <span class="event__icon svg-icon_sun svg-icon_sun-dims" role="img" aria-label="Освещение">
                         </span>
                         <h4 class="event__title">D-Link Omna 180 Cam</h4>
                         <span class="event__subtitle">Включится в 17:00</span>
@@ -205,10 +176,7 @@
                 </li>
                 <li class="event">
                     <button class="event__button">
-                        <span class="event__icon" role="img" aria-label="Температура">
-                            <svg>
-                                <use xlink:href="./assets/symbol-defs.svg#img-icon-temperature"></use>
-                            </svg>
+                        <span class="event__icon svg-icon_temperature svg-icon_temperature-dims" role="img" aria-label="Температура">
                         </span>
                         <h4 class="event__title">Elgato Eve Degree Connected</h4>
                         <span class="event__subtitle">Выключено до 17:00</span>
@@ -216,10 +184,7 @@
                 </li>
                 <li class="event">
                     <button class="event__button">
-                        <span class="event__icon" role="img" aria-label="Освещение">
-                            <svg>
-                                <use xlink:href="./assets/symbol-defs.svg#img-icon-sun"></use>
-                            </svg>
+                        <span class="event__icon svg-icon_sun svg-icon_sun-dims" role="img" aria-label="Освещение">
                         </span>
                         <h4 class="event__title">LIFX Mini Day & Dusk A60 E27</h4>
                         <span class="event__subtitle">Включится в 17:00</span>
@@ -227,10 +192,7 @@
                 </li>
                 <li class="event">
                     <button class="event__button">
-                        <span class="event__icon" role="img" aria-label="Освещение">
-                            <svg>
-                                <use xlink:href="./assets/symbol-defs.svg#img-icon-sun-2"></use>
-                            </svg>
+                        <span class="event__icon svg-icon_sun_2 svg-icon_sun_2-dims" role="img" aria-label="Освещение">
                         </span>
                         <h4 class="event__title">Xiaomi Mi Air Purifier 2S</h4>
                         <span class="event__subtitle">Включено</span>
@@ -238,10 +200,7 @@
                 </li>
                 <li class="event">
                     <button class="event__button">
-                        <span class="event__icon" role="img" aria-label="Освещение">
-                            <svg>
-                                <use xlink:href="./assets/symbol-defs.svg#img-icon-sun"></use>
-                            </svg>
+                        <span class="event__icon svg-icon_sun svg-icon_sun-dims" role="img" aria-label="Освещение">
                         </span>
                         <h4 class="event__title">Philips Zhirui</h4>
                         <span class="event__subtitle">Выключено</span>
@@ -249,10 +208,7 @@
                 </li>
                 <li class="event">
                     <button class="event__button">
-                        <span class="event__icon" role="img" aria-label="Освещение">
-                            <svg>
-                                <use xlink:href="./assets/symbol-defs.svg#img-icon-sun-2"></use>
-                            </svg>
+                        <span class="event__icon svg-icon_sun_2 svg-icon_sun_2-dims" role="img" aria-label="Освещение">
                         </span>
                         <h4 class="event__title">Xiaomi Mi Air Purifier 2S</h4>
                         <span class="event__subtitle">Включено</span>
@@ -265,10 +221,7 @@
             <ul class="section__panel-list">
                 <li class="event">
                     <button class="event__button">
-                        <span class="event__icon" role="img" aria-label="Освещение">
-                            <svg>
-                                <use xlink:href="./assets/symbol-defs.svg#img-icon-sun-2"></use>
-                            </svg>
+                        <span class="event__icon svg-icon_sun_2 svg-icon_sun_2-dims" role="img" aria-label="Освещение">
                         </span>
                         <h4 class="event__title">Xiaomi Yeelight LED Smart Bulb</h4>
                         <span class="event__subtitle">Включено</span>
@@ -276,10 +229,7 @@
                 </li>
                 <li class="event">
                     <button class="event__button">
-                        <span class="event__icon" role="img" aria-label="Температура">
-                            <svg>
-                                <use xlink:href="./assets/symbol-defs.svg#img-icon-temperature"></use>
-                            </svg>
+                        <span class="event__icon svg-icon_temperature svg-icon_temperature-dims" role="img" aria-label="Температура">
                         </span>
                         <h4 class="event__title">Elgato Eve Degree Connected</h4>
                         <span class="event__subtitle">Выключено до 17:00</span>
@@ -292,10 +242,7 @@
             <ul class="section__panel-list">
                 <li class="event">
                     <button class="event__button">
-                        <span class="event__icon" role="img" aria-label="Освещение">
-                            <svg>
-                                <use xlink:href="./assets/symbol-defs.svg#img-icon-sun"></use>
-                            </svg>
+                        <span class="event__icon svg-icon_sun svg-icon_sun-dims" role="img" aria-label="Освещение">
                         </span>
                         <h4 class="event__title">Philips Zhirui</h4>
                         <span class="event__subtitle">Выключено</span>
@@ -303,10 +250,7 @@
                 </li>
                 <li class="event">
                     <button class="event__button">
-                        <span class="event__icon" role="img" aria-label="Освещение">
-                            <svg>
-                                <use xlink:href="./assets/symbol-defs.svg#img-icon-sun-2"></use>
-                            </svg>
+                        <span class="event__icon svg-icon_sun_2 svg-icon_sun_2-dims" role="img" aria-label="Освещение">
                         </span>
                         <h4 class="event__title">Xiaomi Mi Air Purifier 2S</h4>
                         <span class="event__subtitle">Включено</span>
@@ -319,10 +263,7 @@
             <ul class="section__panel-list">
                 <li class="event">
                     <button class="event__button">
-                        <span class="event__icon" role="img" aria-label="Освещение">
-                            <svg>
-                                <use xlink:href="./assets/symbol-defs.svg#img-icon-sun"></use>
-                            </svg>
+                        <span class="event__icon svg-icon_sun svg-icon_sun-dims" role="img" aria-label="Освещение">
                         </span>
                         <h4 class="event__title">D-Link Omna 180 Cam</h4>
                         <span class="event__subtitle">Включится в 17:00</span>
@@ -330,10 +271,7 @@
                 </li>
                 <li class="event">
                     <button class="event__button">
-                        <span class="event__icon" role="img" aria-label="Освещение">
-                            <svg>
-                                <use xlink:href="./assets/symbol-defs.svg#img-icon-sun"></use>
-                            </svg>
+                        <span class="event__icon svg-icon_sun svg-icon_sun-dims" role="img" aria-label="Освещение">
                         </span>
                         <h4 class="event__title">LIFX Mini Day & Dusk A60 E27</h4>
                         <span class="event__subtitle">Включится в 17:00</span>
@@ -341,10 +279,7 @@
                 </li>
                 <li class="event">
                     <button class="event__button">
-                        <span class="event__icon" role="img" aria-label="Освещение">
-                            <svg>
-                                <use xlink:href="./assets/symbol-defs.svg#img-icon-sun-2"></use>
-                            </svg>
+                        <span class="event__icon svg-icon_sun_2 svg-icon_sun_2-dims" role="img" aria-label="Освещение">
                         </span>
                         <h4 class="event__title">Xiaomi Mi Air Purifier 2S</h4>
                         <span class="event__subtitle">Включено</span>
@@ -352,10 +287,7 @@
                 </li>
                 <li class="event">
                     <button class="event__button">
-                        <span class="event__icon" role="img" aria-label="Освещение">
-                            <svg>
-                                <use xlink:href="./assets/symbol-defs.svg#img-icon-sun"></use>
-                            </svg>
+                        <span class="event__icon svg-icon_sun svg-icon_sun-dims" role="img" aria-label="Освещение">
                         </span>
                         <h4 class="event__title">Philips Zhirui</h4>
                         <span class="event__subtitle">Выключено</span>
@@ -368,10 +300,7 @@
             <ul class="section__panel-list">
                 <li class="event">
                     <button class="event__button">
-                        <span class="event__icon" role="img" aria-label="Освещение">
-                            <svg>
-                                <use xlink:href="./assets/symbol-defs.svg#img-icon-sun-2"></use>
-                            </svg>
+                        <span class="event__icon svg-icon_sun_2 svg-icon_sun_2-dims" role="img" aria-label="Освещение">
                         </span>
                         <h4 class="event__title">Xiaomi Mi Air Purifier 2S</h4>
                         <span class="event__subtitle">Включено</span>
