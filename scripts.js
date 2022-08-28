@@ -92,7 +92,5 @@ function makeMenu(node) {
     });
 }
 
-document.addEventListener('DOMContentLoaded', () => {
-    document.querySelectorAll('.main__devices').forEach(makeTabs);
-    document.querySelectorAll('.header__menu').forEach(makeMenu);
-});
+document.querySelectorAll('.main__devices').forEach(makeTabs);
+document.querySelectorAll('.header__menu').forEach(makeMenu);
