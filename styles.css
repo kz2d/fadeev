@@ -400,9 +400,3 @@ html, body {
     font-size: .75rem;
     color: #858585;
 }
-
-@media (max-width: 768px) {
-    .footer__copyright {
-        margin-left: 0;
-    }
-}

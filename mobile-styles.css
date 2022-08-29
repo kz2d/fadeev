@@ -118,4 +118,8 @@
         flex-direction: column;
         align-items: flex-start;
     }
+
+    .footer__copyright {
+        margin-left: 0;
+    }
 }
