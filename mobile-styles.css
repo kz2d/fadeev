@@ -1,0 +1,121 @@
+@media (max-width: 768px) {
+    .header {
+        height: 4rem;
+        margin-bottom: 0;
+        padding: 0 0 0 1.25rem;
+        border-bottom: none;
+    }
+
+    .header__menu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .header__links {
+        display: none;
+
+        position: absolute;
+        z-index: 1;
+        top: 100%;
+        left: 0;
+        box-sizing: border-box;
+        flex-direction: column;
+        width: 100%;
+        padding: 1.25rem;
+        background: #fff;
+        box-shadow: 0 2px 6px 0 rgba(197,186,186,0.50);
+    }
+
+    .header__links-toggled {
+        display: flex;
+        animation: hideMenu .3s ease-in-out 1;
+        animation-fill-mode: both;
+    }
+
+    .header__links_opened {
+        display: flex;
+        visibility: visible;
+        animation: showMenu .3s ease-in-out 1;
+        animation-fill-mode: both;
+    }
+
+    .main {
+        padding: 0 1.25rem;
+    }
+
+    .section__title {
+        gap: 1rem;
+    }
+
+    .section__main-title {
+        display: none;
+    }
+
+    .section__select {
+        display: block;
+    }
+
+    .section__tabs {
+        display: none;
+    }
+
+    .hero-dashboard {
+        flex-direction: column;
+        gap: 1.25rem;
+        height: auto;
+        margin-bottom: 0.3125rem;
+    }
+
+    .hero-dashboard__primary {
+        padding: 1.25rem 1.25rem 0 1.25rem;
+    }
+
+    .hero-dashboard__title {
+        font-size: 1.125rem;
+    }
+
+    .hero-dashboard__subtitle {
+        margin: 0.3125rem 0 0 0;
+        font-size: .75rem;
+    }
+
+    .hero-dashboard__info {
+        margin-top: 0.9375rem;
+    }
+
+    .hero-dashboard__item-details {
+        margin-top: 0.3125rem;
+        font-size: 1.5rem;
+    }
+
+    .hero-dashboard__schedule {
+        flex-direction: row;
+        padding: 0 1.25rem 1.25rem 1.25rem;
+    }
+
+    .event-grid {
+        display: flex;
+        padding-bottom: 0.3125rem;
+        overflow: auto;
+        scrollbar-width: none;
+    }
+
+    .event-grid::-webkit-scrollbar {
+        display: none;
+    }
+
+    .footer {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.9375rem;
+        height: auto;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    .footer__list {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
