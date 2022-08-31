@@ -1,4 +1,4 @@
-function selectTabImplementation(node, newId, select) {
+function selectTabImplementation(node, newId) {
     const newTab = node.querySelector(`.section__tab[data-id=${newId}]`);
     const newPanel = node.querySelector(`.section__panel[data-id=${newId}]`);
     const oldTab = node.querySelector('.section__tab_active');
@@ -18,8 +18,6 @@ function selectTabImplementation(node, newId, select) {
     oldPanel.setAttribute('aria-hidden', 'true');
     newPanel.classList.remove('section__panel_hidden');
     newPanel.setAttribute('aria-hidden', 'false');
-
-    select.value = newId;
 }
 
 function onKeyDown(event, list, selected, selectTab, select) {
