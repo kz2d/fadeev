@@ -54,9 +54,15 @@ function onKeyDown(event, list, selected, selectTab, select) {
 function makeTabs(node) {
     const tabsContainer = node.querySelector('.section__tabs');
     const tabs = tabsContainer.querySelectorAll('.section__tab');
-    const list = Array.from(tabs).map(node => node.dataset.id);
+    const datasets = Array.from(tabs).reduce((acc, node) => {
+        acc.ids.push(node.dataset.id);
+        if (node.classList.contains('.section__tab_active')) {
+            acc.activeId = node.dataset.id;
+        }
+        return acc;
+    }, {ids: [], activeId: ''});
     const select = node.querySelector('.section__select');
-    let selected = tabs.querySelector('.section__tab_active').dataset.id;
+    let selected = datasets.activeId;
 
     function selectTab(newId) {
         selected = newId;
@@ -74,7 +80,7 @@ function makeTabs(node) {
     })
 
     tabsContainer.addEventListener('keydown', (event) => {
-        onKeyDown(event, list, selected, selectTab, select);
+        onKeyDown(event, datasets.ids, selected, selectTab, select);
     })
 }
 
