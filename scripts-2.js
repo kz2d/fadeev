@@ -53,5 +53,4 @@ function onKeyDown(event, list, selected, selectTab, select) {
     }
 
     selectTab(list[index], select);
-    event.preventDefault();
 }

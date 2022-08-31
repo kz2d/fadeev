@@ -7,7 +7,7 @@ function makeTabs(node) {
 
     function selectTab(newId) {
         selected = newId;
-        selectTabImplementation(node, newId, select);
+        selectTabImplementation(node, newId);
     }
 
     select.addEventListener('input', () => {

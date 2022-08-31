@@ -1,7 +1,7 @@
-function selectTabImplementation(node, newId) {
-    const newTab = node.querySelector(`.section__tab[data-id=${newId}]`);
+function selectTabImplementation(node, tabsNode, newId) {
+    const newTab = tabsNode.querySelector(`.section__tab[data-id=${newId}]`);
+    const oldTab = tabsNode.querySelector('.section__tab_active');
     const newPanel = node.querySelector(`.section__panel[data-id=${newId}]`);
-    const oldTab = node.querySelector('.section__tab_active');
     const oldPanel = node.querySelector('.section__panel:not(.section__panel_hidden)');
 
     oldTab.classList.remove('section__tab_active');
@@ -21,11 +21,7 @@ function selectTabImplementation(node, newId) {
 }
 
 function onKeyDown(event, list, selected, selectTab, select) {
-    if (!event.target.classList.contains('section__tab')) {
-        return;
-    }
-
-    if (event.ctrlKey || event.metaKey || event.shiftKey || event.altKey) {
+    if (!event.target.classList.contains('section__tab') || event.ctrlKey || event.metaKey || event.shiftKey || event.altKey) {
         return;
     }
 
@@ -56,15 +52,15 @@ function onKeyDown(event, list, selected, selectTab, select) {
 }
 
 function makeTabs(node) {
-    let selected = node.querySelector('.section__tab_active').dataset.id;
-    const tabs = node.querySelectorAll('.section__tab');
+    const tabsContainer = node.querySelector('.section__tabs');
+    const tabs = tabsContainer.querySelectorAll('.section__tab');
     const list = Array.from(tabs).map(node => node.dataset.id);
     const select = node.querySelector('.section__select');
-    const tabsContainer = node.querySelector('.section__tabs');
+    let selected = tabs.querySelector('.section__tab_active').dataset.id;
 
     function selectTab(newId) {
         selected = newId;
-        selectTabImplementation(node, newId);
+        selectTabImplementation(node, tabsContainer, newId);
     }
 
     select.addEventListener('input', () => {
@@ -73,8 +69,7 @@ function makeTabs(node) {
 
     tabsContainer.addEventListener('click', (event) => {
         if (event.target.classList.contains('section__tab')) {
-            const newId = event.target.dataset.id;
-            selectTab(newId, select);
+            selectTab(event.target.dataset.id, select);
         }
     })
 
@@ -85,16 +80,17 @@ function makeTabs(node) {
 
 function makeMenu(node) {
     let expanded = false;
-    const links = document.querySelector('.header__links');
+    const menuTextNode = node.querySelector('.header__menu-text');
 
     node.addEventListener('click', () => {
         expanded = !expanded;
         node.setAttribute('aria-expanded', expanded ? 'true' : 'false');
-        node.querySelector('.header__menu-text').textContent = expanded ? 'Закрыть меню' : 'Открыть меню';
+        menuTextNode.textContent = expanded ? 'Закрыть меню' : 'Открыть меню';
         links.classList.toggle('header__links_opened', expanded);
         links.classList.add('header__links-toggled');
     });
 }
+const links = document.querySelector('.header__links');
 
 document.querySelectorAll('.main__devices').forEach(node => makeTabs(node));
 document.querySelectorAll('.header__menu').forEach(node => makeMenu(node));
