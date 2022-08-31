@@ -44,12 +44,6 @@
     opacity: 1
 }
 
-@media screen and (min-resolution: 2dppx) {
-    .hero-dashboard {
-        background-image: url(assets/bg@2x.webp)
-    }
-}
-
 .footer__link {
     transition: opacity .15s ease-in-out
 }
@@ -59,16 +53,14 @@
 }
 
 @media screen and (max-width: 768px) {
-    @media (max-width: 768px) {
-        .header__links-toggled {
-            display: flex;
-            animation: .3s ease-in-out both hideMenu
-        }
+    .header__links-toggled {
+        display: flex;
+        animation: .3s ease-in-out both hideMenu
+    }
 
-        .header__links_opened {
-            display: flex;
-            visibility: visible;
-            animation: .3s ease-in-out both showMenu
-        }
+    .header__links_opened {
+        display: flex;
+        visibility: visible;
+        animation: .3s ease-in-out both showMenu
     }
 }
